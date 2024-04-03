@@ -356,9 +356,7 @@ function init() {
         case '/tv-details.html':
             displayShowDetails()
             break
-        case '/shows':
-            displayShowDetails()
-            break
+
 
         case '/search.html':
             search()
