@@ -356,12 +356,14 @@ function init() {
         case '/tv-details.html':
             displayShowDetails()
             break
+        case '/shows':
+            displayShowDetails()
+            break
+
         case '/search.html':
             search()
             break
-        default:
-            console.log('not a page')
-            break
+
 }
 highlightActiveLink()       
 }   
