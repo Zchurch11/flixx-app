@@ -1,13 +1,13 @@
-const global = {
-    currentPage: window.location.pathname,
-    search: {
-      term: '',
-      type: '', 
-      page: 1,
-      totalPages: 1
+// const global = {
+//     currentPage: window.location.pathname,
+//     search: {
+//       term: '',
+//       type: '', 
+//       page: 1,
+//       totalPages: 1
 
-    }
-}
+//     }
+// }
 console.log(global.currentPage)
 
 // function for tv shows
