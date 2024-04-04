@@ -349,7 +349,7 @@ function init() {
             displayPopularMovies()
             break
         case '/shows.html':
-        case '/flixx-app/shows.html':
+        case `/flixx-app/shows.html/?id=${showId}`:
             displayPopularTvShows()
             break
         case '/movie-details.html':
@@ -357,6 +357,7 @@ function init() {
             displayMovieDetails()
             break
         case '/tv-details.html':
+        case '/flixx-app/tv-details.html':
             displayShowDetails()
             break
         case '/search.html':
