@@ -347,6 +347,9 @@ function init() {
           displaySlider()
             displayPopularMovies()
             break
+        case '/flixx-app/':
+          displayPopularMovies()
+          displaySlider()
         case '/shows.html':
             displayPopularTvShows()
             break
