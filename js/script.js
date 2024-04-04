@@ -1,14 +1,13 @@
-const global = window.location.pathname
-// const global = {
-//     currentPage: window.location.pathname,
-//     search: {
-//       term: '',
-//       type: '', 
-//       page: 1,
-//       totalPages: 1
+const global = {
+    currentPage: window.location.pathname,
+    search: {
+      term: '',
+      type: '', 
+      page: 1,
+      totalPages: 1
 
-//     }
-// }
+    }
+}
 console.log(global.currentPage)
 
 // function for tv shows
@@ -345,27 +344,27 @@ function init() {
     switch(global.currentPage) {
         case '/':
         case '/index.html':
+        case 'flixx-app':
           displaySlider()
             displayPopularMovies()
             break
-        case '/flixx-app/':
-          displayPopularMovies()
-          displaySlider()
         case '/shows.html':
+        case '/shows':
             displayPopularTvShows()
             break
         case '/movie-details.html':
+        case '/movies':
             displayMovieDetails()
             break
         case '/tv-details.html':
             displayShowDetails()
             break
-
-
         case '/search.html':
             search()
             break
-
+            default:
+              console.log('not a page')
+              break
 }
 highlightActiveLink()       
 }   
