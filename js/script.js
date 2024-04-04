@@ -1,3 +1,4 @@
+const global = window.location.pathname
 // const global = {
 //     currentPage: window.location.pathname,
 //     search: {
