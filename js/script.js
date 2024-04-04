@@ -344,7 +344,7 @@ function init() {
     switch(global.currentPage) {
         case '/':
         case '/index.html':
-        case 'flixx-app':
+        case '/flixx-app':
           displaySlider()
             displayPopularMovies()
             break
