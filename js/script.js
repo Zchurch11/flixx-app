@@ -1,4 +1,5 @@
 const showId = window.location.search
+const movieId = window.location.search
 const global = {
     currentPage: window.location.pathname,
     search: {
