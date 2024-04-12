@@ -1,5 +1,5 @@
 const showId = window.location.search
-const movieId = window.location.search
+const movieId = window.location.search.split('=')[1]
 const global = {
     currentPage: window.location.pathname,
     search: {
@@ -83,7 +83,7 @@ async function displayPopularMovies() {
 }
 //display movie details
 async function displayMovieDetails() {
-    const movieId = window.location.search.split('=')[1]
+    
     const movie = await fetchAPIData(`movie/${movieId}`)
 
 
@@ -457,7 +457,7 @@ function init() {
             break
         case '/tv-details.html':
         case '/flixx-app/tv-details.html'
-        case 'https://zchurch11.github.io/flixx-app/tv-details.html?id=${show.id}'
+        case 'https://zchurch11.github.io/flixx-app/tv-details.html?id=${show.id}':
         case `/flixx-app/show-details.html?id=${show.id}`:
             displayShowDetails()
             break
