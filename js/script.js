@@ -454,6 +454,7 @@ function init() {
             displayMovieDetails()
             break
         case '/tv-details.html':
+        case '/flixx-app/tv-details.html'
         case `/flixx-app/show-details.html?id=${show.id}`:
             displayShowDetails()
             break
